@@ -12,7 +12,7 @@ const ShowsSchema = new mongoose.Schema({
 })
 
 // מייצר ומייצא מודל שמורכב משם הקולקשן והסכמה 
-exports.ShowsModel = mongoose.model("shows",showsSchema)
+exports.ShowsModel = mongoose.model("shows",ShowsSchema)
 
 exports.validateShows = (_reqBody) => {
   const joiSchema = Joi.object({
